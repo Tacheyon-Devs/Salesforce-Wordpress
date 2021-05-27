@@ -1,0 +1,92 @@
+2021-03-25T03:21:28-07:00 CRITICAL Object of class DateTime could not be converted to string in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\SalesForce.php on line 173
+
+2021-03-25T03:21:43-07:00 CRITICAL Uncaught Exception: DateTime::__construct(): Failed to parse time string (y-m-d) at position 1 (-): Unexpected character in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:71
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php(71): DateTime->__construct('y-m-d')
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#2 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#3 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template(' in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 71
+
+2021-03-25T03:47:03-07:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_quanity() in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:115
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout:: in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 115
+
+2021-03-25T03:48:56-07:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_quanity() in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:115
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checko in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 115
+
+2021-03-25T11:47:43+00:00 CRITICAL Uncaught Error: Call to a member function get_data() on null in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:29
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 29
+
+2021-03-25T12:03:52+00:00 CRITICAL Uncaught Error: Cannot use object of type Automattic\WooCommerce\Admin\Overrides\Order as array in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:29
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 29
+
+2021-03-25T12:05:13+00:00 CRITICAL Uncaught Error: Cannot use object of type Automattic\WooCommerce\Admin\Overrides\Order as array in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:29
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 29
+
+2021-03-25T12:07:06+00:00 CRITICAL Uncaught Error: Cannot use object of type Automattic\WooCommerce\Admin\Overrides\Order as array in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:29
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 29
+
+2021-03-25T12:07:20+00:00 CRITICAL Uncaught Error: Cannot use object of type Automattic\WooCommerce\Admin\Overrides\Order as array in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:29
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 29
+
+2021-03-25T13:00:31+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::discount_total() in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:30
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(59)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 59)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 30
+

@@ -1,0 +1,36 @@
+2021-03-24T08:08:53+00:00 CRITICAL Cannot declare class salesForcePlugIn, because the name is already in use in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 17
+
+2021-03-24T09:54:09+00:00 CRITICAL Uncaught Error: Cannot access protected property WC_Order_Item_Product::$id in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:82
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): getOrderDetailById(50)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 50)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(50 in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 82
+
+2021-03-24T10:06:36+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_item() in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:87
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): getOrderDetailById(50)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 50)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_received(50) in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 87
+
+2021-03-24T22:37:01-07:00 CRITICAL Object of class DateTime could not be converted to string in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\SalesForce.php on line 173
+
+2021-03-24T22:40:07-07:00 CRITICAL Object of class DateTime could not be converted to string in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\SalesForce.php on line 173
+
+2021-03-24T23:13:06-07:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::name() in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php:88
+Stack trace:
+#0 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(292): salesForcePlugIn->getOrderDetailById(53)
+#1 D:\laragon\www\wordpress\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 D:\laragon\www\wordpress\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#3 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\templates\checkout\thankyou.php(80): do_action('woocommerce_tha...', 53)
+#4 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\laragon\\www\\...')
+#5 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(256): wc_get_template('checkout/thanky...', Array)
+#6 D:\laragon\www\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(63): WC_Shortcode_Checkout::order_re in D:\laragon\www\wordpress\wp-content\plugins\salesForcePlugIn\salesForcePlugIn.php on line 88
+
